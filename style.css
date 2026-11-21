@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    margin: 0;
+    background: #0f1420;
+}
+
+.card {
+    flex: 1 1 200px;
+    max-width: 220px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e2636;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 300px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
